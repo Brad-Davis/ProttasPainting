@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+        <link rel ="stylesheet" href="styleFrame.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <nav>
+            <div class = "container">
+                <header>
+                    <img src = "images/prottaslogofinal.png" style = "height: 60px;">
+                </header>
+                <a href="index.html">Home</a>
+                <a href="gallery.html" class="active">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        
+        
+        <div class="parallax" id = "changingImg"></div>
+        
+        
+        
+        <div class="content">
+            
+            <div class="container">
+                <div class="row featurette">
+                <h1>Click on a photo to see it on the slideshow above.</h1>
+                <img class = "gallery" onclick="pick(1)" src = "images/house3.jpg">
+                <img class = "gallery" onclick="pick(2)" src = "images/crane.jpg">
+                <img class = "gallery" onclick="pick(3)" src = "images/house1.jpg">
+                <img class = "gallery" onclick="pick(4)" src = "images/house4.jpg">
+                <img class = "gallery" onclick="pick(5)" src = "images/house2.jpg">
+                <img class = "gallery" onclick="pick(6)" src="images/paintRepair.jpg">
+                <img class = "gallery" onclick="pick(7)" src="images/truck.jpg">
+                </div>
+                <hr class="featurette-divider">
+                
+            <footer>
+                <p class="pull-right"><a href="#">Back to top</a></p>
+                <p>Prottas Painting 2018 | Website Created by Brad Davis</p>
+            </footer>
+        </div>
+            
+        </div>
+        
+         
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src='jsFrame.js'></script>
+    </body>
+</html>
