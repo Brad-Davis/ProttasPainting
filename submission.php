@@ -28,7 +28,7 @@
                 
             <hr class="featurette-divider">
                 <div class="col-md-7 col-md-push-5">
-                    <form action = 'submission.php' method = "post">
+                    <form action = 'submission.php' method = "get">
                         <h1>Email Us!</h1>
                         Enter Name: <input style="color: black; mar" type="text" name="name"><br><br>
                         Enter Email Address:    <input style="color: black;" type="email" name="email"><br><br>
@@ -42,15 +42,15 @@
                     $filled = true;
                     $array = ['message', 'email', 'name'];
                     foreach($array as $value){
-                        if(empty($_POST[$value])){
+                        if(empty($_GET[$value])){
                             $filled = false;
-                            echo("<p>Please make sure to fill in all sections!</p>Also just so you don't lose your message:<br>" . $_POST['message']);
+                            echo("<p>Please make sure to fill in all sections!</p>Also just so you don't lose your message:<br>" . $_GET['message']);
                             break;
                         }
                     }
                     if($filled){
-                        $msg = $_POST['message'] . "\n \n From, " . $_POST['email'];
-                        $name = $_POST['name'];
+                        $msg = $_GET['message'] . "\n \n From, " . $_GET['email'];
+                        $name = $_GET['name'];
                         mail("glennprottas@hotmail.com", $name . ": Website Email",$msg);
                         echo("<p>Message sent! We will be back to you soon!</p>");
                     }
