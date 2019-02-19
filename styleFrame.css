@@ -136,7 +136,7 @@ body, html {
 .parallax { 
     /* The image used */
     background-image: url(images/house3.jpg);
-
+    background-color: darkred;
     /* Full height */
     height: 80%; 
 
