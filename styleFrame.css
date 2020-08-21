@@ -15,6 +15,19 @@
         overflow-y: hidden;   
     }
     
+    .parallax{
+        height: 50% !important;
+        background-attachment: none !important;
+    }
+
+    .fakePara{
+        height: 50% !important;
+        background-attachment: none !important;
+    }
+
+    .fakePara iframe{
+        display: none;
+    }
     nav a{
         font-size: 10px;
         display: block;
@@ -24,6 +37,7 @@
     }
     
     
+
     .col-md-5{
         width: clear;
 
@@ -52,15 +66,22 @@ img {
     border-radius: 25px;
 }
 
+a{
+    color:#5498d3
+}
+
 .gallery{
     width: 30%;
     float: left;
     padding: 10px;
-    border:
 }
 
 .gallery img:hover{
     border: black solid 3px;
+}
+
+.changingImg{
+
 }
 
 header{
