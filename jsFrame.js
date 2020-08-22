@@ -1,70 +1,81 @@
 var x = 1
 var go = 0;
-$(document).ready(function(){
+$(document).ready(function () {
     start();
- 
+
 });
 
 
-function start(){
-    if(go == 0){
+function start() {
+    if (go == 0) {
         x++;
-        if(x>4){
-            x=1
+        if (x > 4) {
+            x = 1
         }
-        setTimeout(pickImage,5000);
+        setTimeout(pickImage, 5000);
     }
 }
 
-function pick(choice){
+function pick(choice) {
     x = choice;
     go = 1; //stops slide show
     pickImage();
 }
 
-$('.gallery').click(function(){
-    $("body").animate({scrollTop:0});
+$('.gallery').click(function () {
+    $("body").animate({ scrollTop: 0 });
 });
 
+var images = new Array()
 
+function preload() {
+    for (i = 0; i < preload.arguments.length; i++) {
+        images[i] = new Image()
+        images[i].src = preload.arguments[i]
+    }
+}
+preload(
+    "https://prottaspainting.net/images/house3.jpg",
+    "https://prottaspainting.net/images/crane.jpg",
+    "https://prottaspainting.net/images/house1.jpg"
+)
 
-
-function pickImage(){
-    switch (x){
+function pickImage() {
+    switch (x) {
 
         case 1:
 
-        $(".parallax").css({"background-image": "url(images/house3.jpg)"});
-        break;
+            $(".parallax").css({ "background-image": "url(images/house3.jpg)" });
+            break;
 
         case 2:
-        $(".parallax").css({"background-image": "url(images/crane.jpg)"});
-        break;
+            $(".parallax").css({ "background-image": "url(images/crane.jpg)" });
+            break;
 
         case 3:
-        $(".parallax").css({"background-image": "url(images/house1.jpg)"});
-        break;
+            $(".parallax").css({ "background-image": "url(images/house1.jpg)" });
+            break;
 
         case 4:
-        $(".parallax").css({"background-image": "url(images/house4.jpg)"});
-        break;
-    
+            $(".parallax").css({ "background-image": "url(images/house4.jpg)" });
+            break;
+
         case 5:
-        $(".parallax").css({"background-image": "url(images/house2.jpg)"});
-        break;
-        
+            $(".parallax").css({ "background-image": "url(images/house2.jpg)" });
+            break;
+
         case 6:
-        $(".parallax").css({"background-image": "url(images/paintRepair.jpg)"});
-        break;
-        
+            $(".parallax").css({ "background-image": "url(images/paintRepair.jpg)" });
+            break;
+
         case 7:
-        $(".parallax").css({"background-image": "url(images/truck.jpg)"});
-        break;
-        
-            
+            $(".parallax").css({ "background-image": "url(images/truck.jpg)" });
+            break;
+
+
     }
     start();
-    
+
 }
 
 
