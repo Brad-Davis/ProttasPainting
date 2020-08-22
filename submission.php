@@ -28,7 +28,7 @@
                 
             <hr class="featurette-divider">
                 <div class="col-md-7 col-md-push-5">
-                    <form action = 'submission.php' method = "POST">
+                    <form action = 'submission.php' method = "get">
                         <h1>Email Us!</h1>
                         Enter Name: <input style="color: black; mar" type="text" name="name"><br><br>
                         Enter Email Address:    <input style="color: black;" type="email" name="email"><br><br>
