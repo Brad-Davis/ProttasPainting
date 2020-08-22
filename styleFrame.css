@@ -16,6 +16,7 @@
     }
     
     .parallax{
+        background-attachment: scroll !important;
         height: 50% !important;
         background-attachment: none !important;
     }
