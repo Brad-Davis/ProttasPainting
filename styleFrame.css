@@ -1,98 +1,88 @@
 @media only screen and (max-width: 740px) {
-    header{
+    header {
         margin-left: 50%;
         transform: translateX(-50%);
-
         /*margin-left: 30%;
         margin-right: 50%;*/
     }
-    
-    .navBar{
+    .navBar {
         list-style: none;
         width: 100%;
         white-space: nowrap;
         overflow-x: auto;
-        overflow-y: hidden;   
+        overflow-y: hidden;
     }
-    
-    .parallax{
+    .parallax {
         background-attachment: scroll !important;
         height: 50% !important;
         background-attachment: none !important;
     }
-
-    .fakePara{
+    .fakePara {
         height: 50% !important;
         background-attachment: none !important;
     }
-
-    .fakePara iframe{
+    .fakePara iframe {
         display: none;
     }
-    nav a{
+    nav a {
         font-size: 10px;
         display: block;
         padding: 12px 8px;
         margin: auto;
         width: 33%;
     }
-    
-    
-
-    .col-md-5{
+    .col-md-5 {
         width: clear;
     }
-  
-    .col-md-7{
+    .col-md-7 {
         width: 100%;
         margin: auto;
-        
     }
-    
-    input{
+    input {
         width: clear;
         color: black;
     }
 }
 
-map{
+map {
     float: left;
     width: 45%;
 }
 
-
 img {
-    border:1px solid #021a40;
+    border: 1px solid #021a40;
     border-radius: 25px;
 }
 
-a{
-    color:#5498d3
+a {
+    color: #aed3f3 !important;
 }
 
-.gallery{
+.gallery {
     width: 30%;
     float: left;
     padding: 10px;
+    cursor: pointer;
 }
 
-.gallery img:hover{
+.gallery img:hover {
     border: black solid 3px;
 }
 
-.changingImg{
+.changingImg {}
 
-}
-
-header{
-    background-color: darkred; /*must be same as nav*/
+header {
+    background-color: darkred;
+    /*must be same as nav*/
     color: aliceblue;
-    padding: 5px 16px; /*same padding as nav a*/
+    padding: 5px 16px;
+    /*same padding as nav a*/
     overflow: hidden;
     display: inline-block;
-    margin-top: 1px; 
+    margin-top: 1px;
     float: left;
 }
+
 nav {
     background-color: darkred;
     overflow: hidden;
@@ -103,9 +93,10 @@ nav {
 }
 
 /* Style the links inside the navigation bar */
+
 nav a {
     float: right;
-    color: #f2f2f2;
+    color: #f2f2f2 !important;
     text-align: center;
     padding: 24px 16px;
     text-decoration: none;
@@ -113,65 +104,64 @@ nav a {
 }
 
 /* Change the color of links on hover */
+
 nav a:hover {
     background-color: #ddd;
-    color: black;
+    color: black !important;
     text-decoration: none;
 }
 
 /* Add a color to the active/current link */
+
 nav a.active {
     background-color: cadetblue;
     color: white;
 }
 
-.container{
+.container {
     width: 83%;
     margin: 0 auto;
 }
 
-.col-md-7{
+.col-md-7 {
     float: left;
-    position:relative;
-    min-height:1px;
-    padding-right:15px;
-    padding-left:15px
-}
-.col-md-5{
-    float: left;
-    position:relative;
-    min-height:1px;
-    padding-right:15px;
-    padding-left:15px
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
 }
 
-body { 
-    margin:0;
-    background: darkred; 
+.col-md-5 {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+body {
+    margin: 0;
+    background: darkred;
 }
 
 body, html {
     height: 100%;
 }
 
-.parallax { 
+.parallax {
     /* The image used */
     background-image: url(images/house3.jpg);
     background-color: darkred;
     /* Full height */
-    height: 80%; 
-
+    height: 80%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position:relative;
-    
-    
+    position: relative;
     overflow: hidden;
     opacity: 1.0;
-
     -webkit-transition: background 1.5s linear;
     -moz-transition: background 1.5s linear;
     -o-transition: background 1.5s linear;
@@ -179,24 +169,19 @@ body, html {
     transition: background 1.5s linear;
 }
 
-.fakePara{
-        /* The image used */
+.fakePara {
+    /* The image used */
     background-image: url(images/house4.jpg);
-
     /* Full height */
-    height: 80%; 
-
+    height: 80%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position:relative;
-    
-    
+    position: relative;
     overflow: hidden;
     opacity: 1.0;
-
     -webkit-transition: background 1.5s linear;
     -moz-transition: background 1.5s linear;
     -o-transition: background 1.5s linear;
@@ -204,28 +189,28 @@ body, html {
     transition: background 1.5s linear;
 }
 
-
-
-.content{
+.content {
     border-top-style: solid;
     border-top-width: 10px;
     border-top-color: black;
-    height:auto;
-    background-color:darkred;
-    font-size:16px;
+    height: auto;
+    background-color: darkred;
+    font-size: 16px;
     color: aliceblue;
     font-family: 'Rokkitt', serif;
 }
-#form{
+
+#form {
     width: 45%;
     float: left;
 }
+
 input {
     width: 100%;
     color: black;
 }
 
-#sendingButton{
+#sendingButton {
     width: 140px;
     color: black;
     border: black;
@@ -233,27 +218,26 @@ input {
     border-width: 3px;
 }
 
-form{
+form {
     width: 100%;
 }
 
-.divide{
+.divide {
     width: 100%;
     height: 20px;
 }
 
-iframe{
+iframe {
     position: relative;
-
     opacity: 0;
     transition: 0.3s;
     z-index: 1;
 }
 
-iframe:hover{
+iframe:hover {
     opacity: 1.0;
 }
 
-.noShow{
+.noShow {
     display: none;
 }

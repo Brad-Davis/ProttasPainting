@@ -20,6 +20,7 @@ function pick(choice) {
     x = choice;
     go = 1; //stops slide show
     pickImage();
+    $('html,body').animate({ scrollTop: 0 }, 'slow');
 }
 
 $('.gallery').click(function () {
@@ -70,6 +71,18 @@ function pickImage() {
 
         case 7:
             $(".parallax").css({ "background-image": "url(images/truck.jpg)" });
+            break;
+
+        case 8:
+            $(".parallax").css({ "background-image": "url(images/interior.jpeg)" });
+            break;
+
+        case 9:
+            $(".parallax").css({ "background-image": "url(images/interior2.jpeg)" });
+            break;
+
+        case 10:
+            $(".parallax").css({ "background-image": "url(images/interior3.jpeg)" });
             break;
 
 
