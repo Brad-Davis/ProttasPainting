@@ -84,6 +84,16 @@ function pickImage() {
         case 10:
             $(".parallax").css({ "background-image": "url(images/interior3.jpeg)" });
             break;
+        case 11:
+            $(".parallax").css({ "background-image": "url(images/interior4.JPG)" });
+            break;
+        case 12:
+            $(".parallax").css({ "background-image": "url(images/interior5.JPG)" });
+            break;
+        case 13:
+            $(".parallax").css({ "background-image": "url(images/interior6.JPG)" });
+            break;
+
 
 
     }
