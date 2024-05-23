@@ -141,11 +141,11 @@ nav a.active {
 
 body {
     margin: 0;
-    background: darkred;
 }
 
 body, html {
     height: 100%;
+    background: darkred;
 }
 
 .parallax {
@@ -241,3 +241,4 @@ iframe:hover {
 .noShow {
     display: none;
 }
+
