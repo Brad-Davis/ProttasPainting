@@ -37,8 +37,6 @@ function preload() {
 }
 preload(
     "https://prottaspainting.net/images/house3.jpg",
-    "https://prottaspainting.net/images/crane.jpg",
-    "https://prottaspainting.net/images/house1.jpg"
 )
 
 function pickImage() {
