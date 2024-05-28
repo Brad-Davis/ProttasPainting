@@ -36,7 +36,7 @@ function preload() {
     }
 }
 preload(
-    "https://prottaspainting.net/images/house3.jpg",
+    "https://prottaspainting.net/images/house3.webp",
 )
 
 function pickImage() {
@@ -44,7 +44,7 @@ function pickImage() {
 
         case 1:
 
-            $(".parallax").css({ "background-image": "url(images/house3.jpg)" });
+            $(".parallax").css({ "background-image": "url(images/house3.webp)" });
             break;
 
         case 2:
